@@ -24,8 +24,8 @@ public class Boletin2_4 {
         int dinero = teclado.nextInt();
         int bill_100 = dinero / 100;
         int bill_20 = (dinero % 100) / 20;
-        int bill_5 = ((dinero % 100) % 20) / 5;
-        int mon_1 = ((dinero % 100) % 20) % 5;
+        int bill_5 = (dinero % 20) / 5;
+        int mon_1 = dinero % 5;
         System.out.println("Son " + bill_100 + " de 100, "
                 + bill_20 + " de 20, " + bill_5 + " de 5 y "
                 + mon_1 + " de 1.");
