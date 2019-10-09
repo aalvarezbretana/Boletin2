@@ -22,14 +22,11 @@ public class Boletin2_5 {
         System.out.println("¿Cuál ha sido su sueldo fijo?");
         float fixo = teclado.nextFloat();
         System.out.println("¿Cuántos euros ha logrado en ventas?");
-        float ventas = teclado.nextFloat();
-        float comision = ventas * 5 / 100;
+        float comision = teclado.nextFloat() * 5 / 100;
         System.out.println("¿Cuántos quilómetros ha hecho al mes?");
-        float quilometros = teclado.nextFloat();
-        float quilometraje = quilometros * 2;
+        float quilometraje = teclado.nextFloat() * 2;
         System.out.println("¿Cuántos días ha tenido que desplazarse?");
-        float dias = teclado.nextFloat();
-        float dietas = dias * 30;
+        float dietas = teclado.nextFloat() * 30;
         float bruto = fixo + comision + quilometraje + dietas;
         final float RSS = 36;
         float irpf = bruto * 18 / 100;
